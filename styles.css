@@ -12,11 +12,13 @@ html {
 
 body {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
   width: 100%;
   background-color: #7BDFF2;
   color: #fff;
@@ -25,15 +27,23 @@ body {
   letter-spacing: 0.5rem;
   font-size: 1rem;
   color: #003a46;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
-.header p {
+.header .main-button {
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #DA627D;
-  width: 80%;
-  padding: 0.5em;
+  color: #fff;
+  width: 100%;
+  padding: 0.75em 1.5em;
   margin: 0 auto;
+  border-radius: 100vh;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  background-color: #DA627D;
+  width: 100%;
+}
+.header .main-button:hover {
+  background-color: #a73a52;
 }
 
 .color-scheme {
@@ -46,14 +56,26 @@ body {
   display: flex;
 }
 .color-scheme .colors {
-  border: 1px blue solid;
   height: 100%;
   width: 100%;
 }
 
 .sample-website {
-  min-height: calc(85vh - 2em - 1rem - 0.75rem - 0.3rem);
-  max-height: calc(85vh - 2em - 1rem - 0.75rem - 0.3rem);
+  border: 1px red solid;
+  flex: 1;
+  background-color: rgb(95, 95, 95);
+  position: relative;
+}
+.sample-website .card-section {
+  border: 1px blue solid;
+  width: 60%;
+  border-radius: clamp(25px, 2em, 3em);
+  margin: 0 auto;
+}
+.sample-website footer {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
 }
 
 img {
