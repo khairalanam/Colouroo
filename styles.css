@@ -7,19 +7,52 @@
 
 html {
   font-family: "Rubik", sans-serif;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 .header {
-  border: 1px solid black;
   text-align: center;
   padding: 1em;
+  width: 100%;
   background-color: #7BDFF2;
   color: #fff;
 }
 .header h1 {
   letter-spacing: 0.5rem;
+  font-size: 1rem;
   color: #003a46;
 }
 .header p {
   font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.color-scheme {
+  width: 100%;
+  height: 15vh;
+}
+.color-scheme .colors-palette {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+}
+.color-scheme .colors {
+  border: 1px blue solid;
+  height: 100%;
+  width: 100%;
+}
+
+.sample-website {
+  border: 1px black solid;
+  min-height: calc(85vh - 2em - 1rem - 0.75rem - 0.3rem);
+  max-height: calc(85vh - 2em - 1rem - 0.75rem - 0.3rem);
+}
+
+img {
+  width: 20%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
