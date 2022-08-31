@@ -34,16 +34,14 @@ body {
   font-size: 0.75rem;
   color: #fff;
   width: 100%;
-  padding: 0.75em 1.5em;
+  padding: 1em;
   margin: 0 auto;
   border-radius: 100vh;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+  border: none;
   background-color: #DA627D;
   width: 100%;
-}
-.header .main-button:hover {
-  background-color: #a73a52;
 }
 
 .color-scheme {
@@ -61,24 +59,46 @@ body {
 }
 
 .sample-website {
-  border: 1px red solid;
   flex: 1;
   background-color: rgb(95, 95, 95);
   position: relative;
 }
 .sample-website .card-section {
-  border: 1px blue solid;
   width: 60%;
   border-radius: clamp(25px, 2em, 3em);
+  background-color: #fff;
   margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.sample-website .card-section img {
+  width: 100%;
+  height: auto;
+  border-radius: clamp(25px, 2em, 3em) clamp(25px, 2em, 3em) 0 0;
+}
+.sample-website .card-section .card-content {
+  padding: 1em;
+  text-align: center;
+}
+.sample-website .card-section .card-content h1 {
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+.sample-website .card-section .card-content p {
+  font-size: 0.75rem;
+  margin-bottom: 1em;
+  text-align: left;
+}
+.sample-website .card-section .card-content .btn-card {
+  border: none;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: clamp(25px, 2em, 3em);
 }
 .sample-website footer {
   position: absolute;
   bottom: 0.5em;
   right: 0.5em;
-}
-
-img {
-  width: 20%;
-  height: auto;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
