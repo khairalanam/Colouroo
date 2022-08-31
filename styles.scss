@@ -24,10 +24,15 @@ body {
         letter-spacing: 0.5rem;
         font-size: 1rem;
         color: #003a46;
+        margin-bottom: 0.5em;
     }
     p {
         font-weight: 600;
         font-size: 0.75rem;
+        background-color: #DA627D;
+        width: 80%;
+        padding: 0.5em;
+        margin: 0 auto;
     }
 }
 
@@ -47,10 +52,8 @@ body {
 }
 
 .sample-website {
-    border: 1px black solid;
     min-height: calc( 100vh - 15vh - 2em - 1rem - 0.75rem - 0.3rem);
     max-height: calc( 100vh - 15vh - 2em - 1rem - 0.75rem - 0.3rem);
-    ;
 }
 
 img {
