@@ -7,4 +7,19 @@
 
 html {
   font-family: "Rubik", sans-serif;
+}
+
+.header {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1em;
+  background-color: #7BDFF2;
+  color: #fff;
+}
+.header h1 {
+  letter-spacing: 0.5rem;
+  color: #003a46;
+}
+.header p {
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

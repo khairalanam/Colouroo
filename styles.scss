@@ -8,3 +8,18 @@
 html {
     font-family: 'Rubik', sans-serif;
 }
+
+.header {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1em;
+    background-color: #7BDFF2;
+    color: #fff;
+    h1 {
+        letter-spacing: 0.5rem;
+        color: #003a46;
+    }
+    p {
+        font-weight: 600;
+    }
+}
