@@ -45,28 +45,41 @@ body {
   max-width: 30em;
 }
 
-.color-scheme {
-  width: 100%;
-  height: 15vh;
-}
-.color-scheme .colors-palette {
+#colors-palette {
   list-style-type: none;
   height: 100%;
   display: flex;
+  width: 100%;
+  height: 15vh;
 }
-.color-scheme .colors {
+#colors-palette:nth-child(1) {
+  background-color: #ffffff;
+}
+#colors-palette:nth-child(2) {
+  background-color: #ffffff;
+}
+#colors-palette:nth-child(3) {
+  background-color: #ffffff;
+}
+#colors-palette:nth-child(4) {
+  background-color: #ffffff;
+}
+#colors-palette:nth-child(5) {
+  background-color: #ffffff;
+}
+
+.colors {
   height: 100%;
-  border: 1px solid red;
   width: 100%;
 }
 
-.sample-website {
+#sample-website {
   flex: 1;
   background-color: rgb(95, 95, 95);
   position: relative;
   padding: 10% 0;
 }
-.sample-website .card-section {
+#sample-website .card-section {
   width: 60%;
   max-width: 400px;
   border-radius: clamp(25px, 2em, 3em);
@@ -76,33 +89,33 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-.sample-website .card-section img {
+#sample-website .card-section img {
   width: 100%;
   max-width: clamp(100%, 100%, 400px);
   height: auto;
   border-radius: clamp(25px, 2em, 3em) clamp(25px, 2em, 3em) 0 0;
 }
-.sample-website .card-section .card-content {
+#sample-website .card-section .card-content {
   padding: 1em;
   text-align: center;
 }
-.sample-website .card-section .card-content h1 {
+#sample-website .card-section .card-content h1 {
   font-size: clamp(14px, 4vw, 32px);
   margin-bottom: 1em;
 }
-.sample-website .card-section .card-content p {
+#sample-website .card-section .card-content p {
   font-size: clamp(12px, 4vw, 24px);
   margin-bottom: 1em;
   text-align: left;
 }
-.sample-website .card-section .card-content .btn-card {
+#sample-website .card-section .card-content .btn-card {
   border: none;
   width: 100%;
   font-size: clamp(12px, 4vw, 24px);
   padding: 0.5em;
   border-radius: clamp(25px, 2em, 3em);
 }
-.sample-website footer {
+#sample-website footer {
   position: absolute;
   bottom: 0.5em;
   right: 0.5em;
@@ -114,22 +127,20 @@ body {
     display: flex;
     flex-direction: row;
   }
-  .color-generator {
-    border: 1px blue solid;
-  }
-  .color-scheme {
-    width: 100%;
-    height: 100%;
-  }
-  .color-scheme .colors-palette {
+  #colors-palette {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    height: calc(100% - 3.75em - 0.75rem - 2em - 0.825rem);
   }
-  .color-scheme .colors {
-    border: 1px solid red;
+  #colors-palette .colors {
     width: 100%;
-    height: 100%;
-    flex-basis: 100%;
+    justify-content: space-around;
+  }
+  .main-button:hover {
+    background-color: #b63551;
+  }
+  .main-button:active {
+    background-color: #912038;
   }
 }/*# sourceMappingURL=styles.css.map */
