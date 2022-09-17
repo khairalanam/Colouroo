@@ -50,6 +50,14 @@ function generateColours(colors) {
         const btnCard = document.getElementsByClassName("btn-card")[0];
         btnCard.style.backgroundColor = colorHex;
         break;
+      case 3:
+        const titleCard = document.getElementsByTagName("h1")[1];
+        titleCard.style.color = colorHex;
+        break;
+      case 4:
+        const paraCard = document.getElementsByTagName("p")[0];
+        paraCard.style.color = colorHex;
+        break;
     }
   }
 }
