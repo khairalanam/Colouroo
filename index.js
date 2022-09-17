@@ -4,25 +4,33 @@ const getRandomColorAPI = async () => {
   );
   const data = await response.json();
 
-  console.log(data);
-
   return data;
 };
 
+async function updateRandomColorAPI() {
+  let numGenerated = Math.floor(Math.random() * 10000);
+  const response = await fetch(
+    `https://www.colr.org/json/schemes/random/7?scheme_size_limit=%3E5/${numGenerated}`
+  );
+  const data = await response.json();
+
+  return data;
+}
+
+getRandomColorAPI();
+
 var colors = [];
 
-getRandomColorAPI()
-  .then((data) => {
-    colors = data["schemes"][0]["colors"];
-    console.log(colors);
-    const btn = document.getElementsByClassName("main-button")[0];
-    btn.addEventListener("click", generateColours(colors));
-    getRandomColorAPI();
-  })
-  .catch((error) => console.log(error.message));
+const generate = () => {
+  updateRandomColorAPI()
+    .then((data) => {
+      colors = data["schemes"][0]["colors"];
+      generateColours(colors);
+    })
+    .catch((error) => console.log(error.message));
+};
 
 function generateColours(colors) {
-  var data = getRandomColorAPI();
   var colorsPalette = document.getElementById("colors-palette").children;
   for (let i = 0; i < 5; i++) {
     var color = colorsPalette.item(i);
