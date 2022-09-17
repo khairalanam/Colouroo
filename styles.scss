@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+// resets
 * {
     margin: 0;
     padding: 0;
@@ -16,18 +18,24 @@ body {
     flex-direction: column;
 }
 
+
+// head section containing Colouroo title and button
 .header {
     text-align: center;
     padding: 1.5em;
     width: 100%;
     background-color: #7BDFF2;
     color: #fff;
+
+    // Colouroo heading 
     h1 {
         letter-spacing: 0.5rem;
         font-size: 1rem;
         color: #003a46;
         margin-bottom: 0.75em;
     }
+
+    // button to generate color scheme
     .main-button {
         font-weight: 600;
         font-size: 0.75rem;
@@ -44,6 +52,8 @@ body {
     }
 }
 
+
+// palette section
 #colors-palette {
     list-style-type: none;
     height: 100%;
@@ -72,11 +82,15 @@ body {
     width: 100%;
 }
 
+
+// sample card section
 #sample-website {
     flex: 1;
     background-color: rgb(95, 95, 95);
     position: relative;
     padding: 10% 0;
+
+    // card
     .card-section {
         width: 60%;
         max-width: 400px;
@@ -84,12 +98,16 @@ body {
         background-color: #fff;
         margin: 0 auto;
         height: fit-content;
+
+        //main image in card
         img {
             width: 100%;
             max-width: clamp(100%, 100%, 400px);
             height: auto;
             border-radius: clamp(25px, 2em, 3em) clamp(25px, 2em, 3em) 0 0;
         }
+
+        // text content and button in card
         .card-content {
             padding: 1em;
             text-align: center;
@@ -119,12 +137,18 @@ body {
     }
 }
 
+
+// desktop view
 @media screen and (min-width: 768px) {
+
+    // change flex direction from column to row
     body {
         display: flex;
         flex-direction: row;
     }
     #colors-palette {
+
+        //change flex direction from row to column
         list-style-type: none;
         display: flex;
         flex-direction: column;
