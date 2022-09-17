@@ -1,12 +1,3 @@
-const getRandomColorAPI = async () => {
-  const response = await fetch(
-    "https://www.colr.org/json/schemes/random/7?scheme_size_limit=%3E5"
-  );
-  const data = await response.json();
-
-  return data;
-};
-
 async function updateRandomColorAPI() {
   let numGenerated = Math.floor(Math.random() * 10000);
   const response = await fetch(
@@ -16,8 +7,6 @@ async function updateRandomColorAPI() {
 
   return data;
 }
-
-getRandomColorAPI();
 
 var colors = [];
 
